@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<article class="tool">
+  <header class="tool-header">
+    <h1>{{ page.title }}</h1>
+    {%- if page.tagline %}
+    <p class="tool-tagline">{{ page.tagline }}</p>
+    {%- endif %}
+
+    {%- if page.website or page.docs or page.repo %}
+    <div class="tool-links">
+      {%- if page.website %}<a href="{{ page.website }}" target="_blank" rel="noopener">官网</a>{% endif %}
+      {%- if page.docs %}<a href="{{ page.docs }}" target="_blank" rel="noopener">文档</a>{% endif %}
+      {%- if page.repo %}<a href="{{ page.repo }}" target="_blank" rel="noopener">代码仓库</a>{% endif %}
+    </div>
+    {%- endif %}
+
+    {%- if page.category or page.platform or page.updated %}
+    <dl class="tool-facts">
+      {%- if page.category %}<dt>类型</dt><dd>{{ page.category }}</dd>{% endif %}
+      {%- if page.platform %}<dt>平台</dt><dd>{{ page.platform }}</dd>{% endif %}
+      {%- if page.updated %}<dt>更新于</dt><dd>{{ page.updated }}</dd>{% endif %}
+    </dl>
+    {%- endif %}
+  </header>
+
+  {{ content }}
+</article>
