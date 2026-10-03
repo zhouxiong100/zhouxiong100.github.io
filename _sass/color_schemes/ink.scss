@@ -1,0 +1,19 @@
+// 自定义配色「墨与纸」
+// 基于 light 方案覆盖变量：先 import light，再覆盖要改的项。
+// 直接改主题自带文件会在升级时被覆盖，所以放在这里。
+@import "./color_schemes/light";
+
+$body-background-color: #fcfaf6;
+$body-heading-color: #1b2a28;
+$body-text-color: #3d4746;
+$link-color: #0f6f66;
+$nav-child-link-color: #55605f;
+$sidebar-color: #f3efe7;
+$base-button-color: #f3efe7;
+$btn-primary-color: #0f6f66;
+$code-background-color: #f4efe7;
+$feedback-color: #eae4d7;
+$table-background-color: #ffffff;
+$search-background-color: #ffffff;
+$search-result-preview-color: #55605f;
+$border-color: #e2dbcd;

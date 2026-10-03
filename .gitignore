@@ -1,4 +1,6 @@
-/vendor/bundle
 /_site
-/.bundle
 /.jekyll-cache
+/.jekyll-metadata
+/vendor/bundle
+/.bundle
+.DS_Store

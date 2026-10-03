@@ -1,0 +1,307 @@
+// ============================================================
+// 自定义样式层
+// 颜色 / 间距等主题变量请改 _sass/color_schemes/ink.scss
+// 这里只放组件级样式，方便主题升级时不被冲掉
+// ============================================================
+
+$display-font: "Newsreader", "Songti SC", "Source Han Serif SC", "Noto Serif SC", georgia, serif;
+$text-font: -apple-system, blinkmacsystemfont, "Segoe UI", "PingFang SC", "Hiragino Sans GB",
+  "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+
+:root {
+  --ink-accent: #0f6f66;
+  --ink-accent-soft: #e3efec;
+  --ink-line: #e2dbcd;
+  --ink-muted: #7b8686;
+  --ink-card: #ffffff;
+}
+
+// ---------- 字体 ----------
+body {
+  font-family: $text-font;
+  background-color: $body-background-color;
+  background-image:
+    radial-gradient(60rem 30rem at 110% -10%, rgba(15, 111, 102, 0.06), transparent 60%),
+    radial-gradient(45rem 25rem at -10% 8%, rgba(184, 132, 60, 0.07), transparent 60%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title {
+  font-family: $display-font;
+  letter-spacing: -0.01em;
+}
+
+.side-bar {
+  border-right: 1px solid var(--ink-line);
+}
+
+// ---------- 首页 Hero ----------
+.hero {
+  padding: 1.5rem 0 2.5rem;
+  border-bottom: 1px solid var(--ink-line);
+  margin-bottom: 2.5rem;
+}
+
+.hero-eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-accent);
+  margin-bottom: 0.75rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+.hero-sub {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--ink-muted);
+  max-width: 38rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+// ---------- 卡片 ----------
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+  padding: 0;
+}
+
+.card {
+  display: block;
+  padding: 1.125rem 1.25rem;
+  background: var(--ink-card);
+  border: 1px solid var(--ink-line);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: var(--ink-accent);
+    box-shadow: 0 6px 20px rgba(27, 42, 40, 0.08);
+    text-decoration: none;
+  }
+
+  .card-title {
+    display: block;
+    font-family: $display-font;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: $body-heading-color;
+    margin-bottom: 0.375rem;
+  }
+
+  .card-desc {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--ink-muted);
+  }
+}
+
+// ---------- 文章列表 ----------
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.post-list-item {
+  padding: 1.125rem 0;
+  border-bottom: 1px solid var(--ink-line);
+
+  &:first-child {
+    border-top: 1px solid var(--ink-line);
+  }
+
+  a.post-list-title {
+    font-family: $display-font;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .post-list-excerpt {
+    margin: 0.375rem 0 0;
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: var(--ink-muted);
+  }
+}
+
+.post-meta {
+  font-size: 0.8125rem;
+  color: var(--ink-muted);
+  margin-bottom: 0.5rem;
+
+  .sep {
+    padding: 0 0.4rem;
+    opacity: 0.5;
+  }
+}
+
+// ---------- 标签 ----------
+.tag {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  margin-right: 0.375rem;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--ink-accent);
+  background: var(--ink-accent-soft);
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+// ---------- 文章页 ----------
+.post-header {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--ink-line);
+  margin-bottom: 2rem;
+
+  h1 {
+    font-size: 2.125rem;
+    line-height: 1.25;
+    margin: 0 0 0.75rem;
+  }
+
+  .post-lede {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--ink-muted);
+    margin: 0;
+  }
+}
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--ink-line);
+  font-size: 0.875rem;
+
+  a {
+    max-width: 45%;
+  }
+}
+
+// ---------- 工具页 ----------
+.tool-header {
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--ink-line);
+  margin-bottom: 1.75rem;
+
+  h1 {
+    margin: 0 0 0.5rem;
+    font-size: 2.125rem;
+  }
+
+  .tool-tagline {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--ink-muted);
+    margin: 0 0 1rem;
+  }
+}
+
+.tool-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+
+  a {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8125rem;
+    border: 1px solid var(--ink-line);
+    border-radius: 999px;
+    background: var(--ink-card);
+    text-decoration: none;
+
+    &:hover {
+      border-color: var(--ink-accent);
+      text-decoration: none;
+    }
+  }
+}
+
+.tool-facts {
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+  margin: 0;
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  dt {
+    float: left;
+    clear: left;
+    width: 4.5rem;
+    font-weight: 600;
+    color: $body-heading-color;
+  }
+
+  dd {
+    margin: 0 0 0.25rem 4.5rem;
+  }
+}
+
+// ---------- 响应式 ----------
+@media (max-width: 50rem) {
+  .hero {
+    padding-top: 0.5rem;
+  }
+
+  .hero-title {
+    font-size: 1.875rem;
+  }
+
+  .post-header h1,
+  .tool-header h1 {
+    font-size: 1.625rem;
+  }
+
+  .post-nav {
+    flex-direction: column;
+
+    a {
+      max-width: 100%;
+    }
+  }
+}
+
+// ---------- 打印 ----------
+@media print {
+  .side-bar,
+  .page-header,
+  .post-nav,
+  .hero-actions {
+    display: none;
+  }
+}
