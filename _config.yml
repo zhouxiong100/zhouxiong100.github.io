@@ -1,0 +1,18 @@
+title: 知识分享站
+email: zhouxiong100@example.com
+description: 记录技术拆解、实践经验和学习笔记。
+baseurl: ""
+url: "https://zhouxiong100.github.io"
+
+theme: just-the-docs
+
+markdown: kramdown
+
+collections:
+  posts:
+    output: true
+
+permalink: /:categories/:title/
+
+plugins:
+  - jekyll-feed
