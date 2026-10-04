@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 690" role="img" aria-labelledby="title desc">
+  <title id="title">AI Agent 的 Harness 结构</title>
+  <desc id="desc">Harness 包含输入与指令、上下文与状态、控制循环、安全与权限、工具执行和结果验证，围绕 LLM 形成 Agent 运行系统。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 10 5 0 10Z" fill="#52716b"/>
+    </marker>
+    <style>
+      text { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; fill: #203b37; }
+      .title { font-size: 28px; font-weight: 700; }
+      .label { font-size: 20px; font-weight: 700; }
+      .body { font-size: 17px; }
+      .small { font-size: 15px; fill: #62736f; }
+      .box { fill: #fffefa; stroke: #cdd8d1; stroke-width: 2; rx: 14; }
+      .model { fill: #e4f0eb; stroke: #78a294; stroke-width: 2.5; rx: 18; }
+      .guard { fill: #f7edda; stroke: #c99c4b; stroke-width: 2; rx: 14; }
+      .line { fill: none; stroke: #52716b; stroke-width: 3; marker-end: url(#arrow); }
+      .back { fill: none; stroke: #b78132; stroke-width: 2.5; stroke-dasharray: 8 6; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1200" height="690" rx="22" fill="#f4f2e9"/>
+  <text x="48" y="57" class="title">Harness：把模型能力接入一个可控的执行循环</text>
+  <rect x="54" y="91" width="1092" height="544" rx="26" fill="#e9eee8" stroke="#9aafa5" stroke-width="2"/>
+  <rect x="82" y="115" width="1036" height="58" class="guard"/>
+  <text x="600" y="151" class="label" text-anchor="middle">指令与输入 · 目标、项目规则、当前任务所需信息</text>
+
+  <rect x="100" y="222" width="230" height="90" class="box"/>
+  <text x="215" y="259" class="label" text-anchor="middle">上下文与状态</text>
+  <text x="215" y="287" class="small" text-anchor="middle">进度、历史、必要记忆</text>
+
+  <rect x="420" y="210" width="360" height="150" class="model"/>
+  <text x="600" y="267" class="title" text-anchor="middle">LLM</text>
+  <text x="600" y="302" class="body" text-anchor="middle">理解 · 推理 · 选择下一步</text>
+  <text x="600" y="334" class="small" text-anchor="middle">提出回答或工具调用</text>
+
+  <rect x="870" y="222" width="230" height="90" class="box"/>
+  <text x="985" y="259" class="label" text-anchor="middle">工具接口</text>
+  <text x="985" y="287" class="small" text-anchor="middle">文件、终端、API、搜索</text>
+
+  <path d="M600 175v26" class="line"/>
+  <path d="M342 266h66" class="line"/>
+  <path d="M792 266h66" class="line"/>
+  <path d="M985 322v70" class="line"/>
+  <rect x="870" y="402" width="230" height="86" class="guard"/>
+  <text x="985" y="438" class="label" text-anchor="middle">权限与安全</text>
+  <text x="985" y="466" class="small" text-anchor="middle">允许、限制或请求确认</text>
+  <path d="M858 445h-64" class="line"/>
+  <rect x="564" y="402" width="220" height="86" class="box"/>
+  <text x="674" y="438" class="label" text-anchor="middle">执行工具</text>
+  <text x="674" y="466" class="small" text-anchor="middle">返回真实操作结果</text>
+  <path d="M552 445h-64" class="line"/>
+  <rect x="220" y="402" width="260" height="86" class="box"/>
+  <text x="350" y="438" class="label" text-anchor="middle">验证与恢复</text>
+  <text x="350" y="466" class="small" text-anchor="middle">测试、错误处理、重试</text>
+
+  <path d="M350 392 C350 367 445 366 470 358" class="back"/>
+  <path d="M674 390 C674 376 650 373 636 362" class="back"/>
+  <text x="600" y="548" class="label" text-anchor="middle">控制循环：检查结果 → 继续、调整、结束或交还给人</text>
+  <text x="600" y="588" class="small" text-anchor="middle">Harness 负责连接与约束；LLM 负责基于上下文提出判断和行动</text>
+</svg>
