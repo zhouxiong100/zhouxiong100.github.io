@@ -52,4 +52,4 @@ MCP（Model Context Protocol）把这个矩阵拆成两半：工具侧实现一�
 **失败处理**：工具调用失败时，返回的错误信息质量直接决定 Agent 能否自救。
 返回原始堆栈不如返回「参数不合法，expected int, got string」。
 
-具体有哪些现成的 server 可以直接用，见[工具页]({{ '/tools/mcp-servers/' | relative_url }})。
+现成的 server 清单可以参考 [MCP 官方文档](https://modelcontextprotocol.io/)。
