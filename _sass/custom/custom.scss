@@ -1,12 +1,10 @@
 // ============================================================
 // 自定义样式层
-// 颜色 / 间距等主题变量请改 _sass/color_schemes/ink.scss
-// 这里只放组件级样式，方便主题升级时不被冲掉
+// 颜色 / 间距 / 正文字体等主题变量请改 _sass/color_schemes/ink.scss
+// 这里只放组件级样式和自有类，只选标准元素与自有类，不依赖主题内部类名
 // ============================================================
 
 $display-font: "Newsreader", "Songti SC", "Source Han Serif SC", "Noto Serif SC", georgia, serif;
-$text-font: -apple-system, blinkmacsystemfont, "Segoe UI", "PingFang SC", "Hiragino Sans GB",
-  "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
 
 :root {
   --ink-accent: #0f6f66;
@@ -17,8 +15,8 @@ $text-font: -apple-system, blinkmacsystemfont, "Segoe UI", "PingFang SC", "Hirag
 }
 
 // ---------- 字体 ----------
+// 正文字体在 ink.scss 用官方变量 $body-font-family 覆盖
 body {
-  font-family: $text-font;
   background-color: $body-background-color;
   background-image:
     radial-gradient(60rem 30rem at 110% -10%, rgba(15, 111, 102, 0.06), transparent 60%),
@@ -32,14 +30,9 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.site-title {
+h6 {
   font-family: $display-font;
   letter-spacing: -0.01em;
-}
-
-.side-bar {
-  border-right: 1px solid var(--ink-line);
 }
 
 // ---------- 首页 Hero ----------
@@ -298,8 +291,6 @@ h6,
 
 // ---------- 打印 ----------
 @media print {
-  .side-bar,
-  .page-header,
   .post-nav,
   .hero-actions {
     display: none;
