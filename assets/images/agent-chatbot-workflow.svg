@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Chatbot、Workflow 与 Agent 的决策方式对比</title>
+  <desc id="desc">Chatbot 由用户逐轮驱动，Workflow 按固定步骤执行，Agent 则根据工具观察结果循环选择下一步。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 10 5 0 10Z" fill="#52716b"/>
+    </marker>
+    <style>
+      text { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; fill: #203b37; }
+      .title { font-size: 27px; font-weight: 700; }
+      .label { font-size: 20px; font-weight: 700; }
+      .body { font-size: 17px; }
+      .small { font-size: 15px; fill: #62736f; }
+      .box { fill: #fffefa; stroke: #cdd8d1; stroke-width: 2; rx: 14; }
+      .model { fill: #e4f0eb; stroke: #78a294; stroke-width: 2; rx: 14; }
+      .tool { fill: #f7edda; stroke: #c99c4b; stroke-width: 2; rx: 14; }
+      .line { fill: none; stroke: #52716b; stroke-width: 3; marker-end: url(#arrow); }
+      .dash { fill: none; stroke: #b78132; stroke-width: 2.5; stroke-dasharray: 7 6; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1200" height="620" rx="22" fill="#f4f2e9"/>
+  <text x="48" y="55" class="title">同一个目标，三种不同的“下一步”决策方式</text>
+
+  <rect x="38" y="87" width="1124" height="145" rx="18" fill="#e9eee8"/>
+  <text x="64" y="122" class="label">Chatbot · 由用户逐轮驱动</text>
+  <rect x="82" y="147" width="240" height="58" class="box"/>
+  <text x="202" y="183" class="body" text-anchor="middle">用户提问</text>
+  <path d="M332 176h180" class="line"/>
+  <rect x="522" y="147" width="240" height="58" class="model"/>
+  <text x="642" y="183" class="body" text-anchor="middle">模型回答</text>
+  <path d="M772 176h170" class="dash"/>
+  <rect x="951" y="147" width="160" height="58" class="box"/>
+  <text x="1031" y="183" class="body" text-anchor="middle">等待下一问</text>
+
+  <rect x="38" y="250" width="1124" height="145" rx="18" fill="#e9eee8"/>
+  <text x="64" y="285" class="label">Workflow · 由预先编排的步骤驱动</text>
+  <rect x="82" y="309" width="225" height="58" class="box"/>
+  <text x="194" y="345" class="body" text-anchor="middle">读取日志</text>
+  <path d="M317 338h86" class="line"/>
+  <rect x="413" y="309" width="225" height="58" class="model"/>
+  <text x="525" y="345" class="body" text-anchor="middle">分析错误</text>
+  <path d="M648 338h86" class="line"/>
+  <rect x="744" y="309" width="225" height="58" class="box"/>
+  <text x="856" y="345" class="body" text-anchor="middle">生成报告</text>
+  <path d="M979 338h85" class="line"/>
+  <text x="1084" y="345" class="small" text-anchor="middle">结束</text>
+
+  <rect x="38" y="413" width="1124" height="174" rx="18" fill="#e9eee8"/>
+  <text x="64" y="448" class="label">Agent · 根据观察结果选择下一步</text>
+  <rect x="82" y="476" width="205" height="58" class="box"/>
+  <text x="184" y="512" class="body" text-anchor="middle">目标与上下文</text>
+  <path d="M297 505h90" class="line"/>
+  <rect x="397" y="476" width="205" height="58" class="model"/>
+  <text x="499" y="512" class="body" text-anchor="middle">选择行动</text>
+  <path d="M612 505h74" class="line"/>
+  <rect x="696" y="476" width="190" height="58" class="tool"/>
+  <text x="791" y="512" class="body" text-anchor="middle">调用工具</text>
+  <path d="M896 505h70" class="line"/>
+  <rect x="976" y="476" width="150" height="58" class="box"/>
+  <text x="1051" y="512" class="body" text-anchor="middle">观察结果</text>
+  <path d="M1050 466 C1010 430 520 430 500 465" class="dash"/>
+  <text x="755" y="442" class="small" text-anchor="middle">未完成：再判断</text>
+</svg>
