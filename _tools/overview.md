@@ -32,6 +32,10 @@ description: 我长期在用的 AI Agent 工具清单。
 
 - [本地模型运行]({{ '/tools/local-models/' | relative_url }})：Ollama / LM Studio 的取舍
 
+**模型与路由**：统一管理多个 Agent 的模型和供应商配置。
+
+- [Magpie]({{ '/tools/magpie/' | relative_url }})：一个入口切换 Claude Code、Codex、Gemini CLI 的模型
+
 ## 挑选标准
 
 {: .tip }
