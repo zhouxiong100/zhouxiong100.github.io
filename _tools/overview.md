@@ -7,7 +7,7 @@ description: 我长期在用的 AI Agent 工具清单。
 
 # 工具总览
 
-只收录我自己在真实项目里持续使用的工具。每个工具页都写清楚三件事：
+当前只保留我持续使用、且已经形成稳定工作流的工具。每个工具页写清楚三件事：
 **它是干什么的、我实际怎么用、什么地方会踩坑**。
 
 {: .note }
@@ -17,20 +17,7 @@ description: 我长期在用的 AI Agent 工具清单。
 
 **命令行 Agent**：直接在终端里操作代码仓库，适合脚本化和批量任务。
 
-- [Claude Code]({{ '/tools/claude-code/' | relative_url }})：重度改造仓库时的首选
 - [Codex CLI]({{ '/tools/codex-cli/' | relative_url }})：轻量、适合脚本和 CI 场景
-
-**编辑器内 Agent**：在 IDE 里围绕当前文件工作，适合边写边改。
-
-- [Cursor]({{ '/tools/cursor/' | relative_url }})：代码补全和局部改造体验最好
-
-**能力扩展**：把外部系统接进 Agent 的标准协议。
-
-- [MCP 服务器]({{ '/tools/mcp-servers/' | relative_url }})：让 Agent 用上你的数据库、API 和文档
-
-**本地运行**：数据不出本机时使用。
-
-- [本地模型运行]({{ '/tools/local-models/' | relative_url }})：Ollama / LM Studio 的取舍
 
 **模型与路由**：统一管理多个 Agent 的模型和供应商配置。
 
