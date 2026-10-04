@@ -3,6 +3,11 @@
 // 直接改主题自带文件会在升级时被覆盖，所以放在这里。
 @import "./color_schemes/light";
 
+// 正文字体：走官方变量 $body-font-family 覆盖，避免在 custom.scss 里硬写 body 样式。
+// 中文字符不在字体文件里，由 head_custom.html 只加载 Newsreader 拉丁字形、其余回落到本栈。
+$body-font-family: -apple-system, blinkmacsystemfont, "Segoe UI", "PingFang SC",
+  "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+
 $body-background-color: #fcfaf6;
 $body-heading-color: #1b2a28;
 $body-text-color: #3d4746;
