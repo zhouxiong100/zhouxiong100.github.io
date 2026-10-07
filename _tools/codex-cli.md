@@ -1,6 +1,7 @@
 ---
 title: Codex CLI
 nav_order: 11
+nav_exclude: true
 card: true
 tagline: 轻量的命令行 Agent，沙箱和审批机制清晰，适合脚本化与 CI 场景
 category: 命令行 Agent

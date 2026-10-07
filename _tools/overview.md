@@ -1,6 +1,7 @@
 ---
 title: 工具总览
 nav_order: 1
+nav_exclude: true
 permalink: /tools/
 description: skill、MCP 与 AI Agent 工具清单。
 ---
