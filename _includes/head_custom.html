@@ -7,4 +7,34 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/newsreader@5.3.0/latin-600.css">
 </noscript>
 
+<!-- 关键布局提前内联：避免导航整页重载时侧边栏/正文横向跳动 -->
+<style>
+  html {
+    scrollbar-gutter: stable;
+  }
+
+  @media (min-width: 50rem) {
+    .side-bar {
+      position: fixed;
+      width: 15.5rem;
+      height: 100%;
+    }
+
+    .side-bar + .main {
+      margin-left: 15.5rem;
+    }
+  }
+
+  @media (min-width: 66.5rem) {
+    .side-bar {
+      width: calc((100% - 66.5rem) / 2 + 16.5rem);
+      min-width: 16.5rem;
+    }
+
+    .side-bar + .main {
+      margin-left: max(16.5rem, (100% - 66.5rem) / 2 + 16.5rem);
+    }
+  }
+</style>
+
 <meta name="theme-color" content="#0f6f66">
