@@ -2,19 +2,19 @@
 layout: default
 title: 首页
 nav_order: 1
-description: AI Agent 使用经验、工作流拆解与工具分享。
+description: AI Agent 实践经验，以及 skill、MCP 和工具分享。
 ---
 
 <div class="hero">
-  <p class="hero-eyebrow">AI Agent · 实践经验</p>
+  <p class="hero-eyebrow">实践经验 · skill&amp;MCP&amp;工具</p>
   <h1 class="hero-title">把 AI Agent 用进真实的工作流</h1>
   <p class="hero-sub">
-    这里记录我在日常研发中使用 AI Agent 的经验：哪些做法真的省下时间，
-    哪些只是看起来很忙，以及值得长期留在工具箱里的工具。
+    这里记录我在日常研发中使用 AI Agent 的经验，以及 skill、MCP
+    和工具的真实使用边界。
   </p>
   <div class="hero-actions">
     <a class="btn btn-primary" href="{{ '/articles/' | relative_url }}">浏览全部文章</a>
-    <a class="btn" href="{{ '/tools/' | relative_url }}">看看工具箱</a>
+    <a class="btn" href="{{ '/tools/' | relative_url }}">看看工具</a>
   </div>
 </div>
 
@@ -38,7 +38,7 @@ description: AI Agent 使用经验、工作流拆解与工具分享。
 
 [查看全部文章 →]({{ '/articles/' | relative_url }})
 
-## 工具箱
+## skill&MCP&工具
 {: .no_toc }
 
 挑选标准只有一条：我自己会在真实项目里持续用它。
