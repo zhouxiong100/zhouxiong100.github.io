@@ -127,5 +127,4 @@ Harness 不一定是一个单独的软件包。简单场景里，它可能只是
 
 - Anthropic： [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)
 - OpenAI： [A practical guide to building agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf)
-- 站内文章：[我把 AI Agent 放进研发流程的四个位置]({{ '/posts/2026/09/agent-workflow/' | relative_url }})
 - 站内文章：[上下文管理：让 Agent 少返工的关键]({{ '/posts/2026/09/context-engineering/' | relative_url }})
