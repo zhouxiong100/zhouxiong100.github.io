@@ -153,6 +153,47 @@ h6 {
   }
 }
 
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.125rem 1.25rem;
+  background: var(--ink-card);
+  border: 1px solid var(--ink-line);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: var(--ink-accent);
+    box-shadow: 0 6px 20px rgba(27, 42, 40, 0.08);
+    text-decoration: none;
+  }
+
+  .post-card-title {
+    font-family: $display-font;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.45;
+    color: $body-heading-color;
+  }
+
+  .post-card-excerpt {
+    font-size: 0.875rem;
+    line-height: 1.65;
+    color: var(--ink-muted);
+  }
+}
+
 // ---------- 标签 ----------
 .tag {
   display: inline-block;

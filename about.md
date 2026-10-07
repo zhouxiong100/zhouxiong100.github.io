@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 关于
-nav_order: 9
+nav_order: 99
 permalink: /about/
 description: 关于这个站点和作者。
 ---
