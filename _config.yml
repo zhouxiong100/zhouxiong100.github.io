@@ -1,7 +1,7 @@
 # ========== 站点信息 ==========
-title: 知识分享站
-tagline: AI Agent 使用经验与工具
-description: 记录 AI Agent 的使用经验、工作流拆解，以及值得长期留在工具箱里的工具。
+title: zhouxiong's site
+tagline: AI Agent 实践经验 · skill&amp;MCP&amp;工具
+description: 记录 AI Agent 实践经验，以及 skill、MCP 和工具的真实使用边界。
 lang: zh-CN
 url: "https://zhouxiong100.github.io"
 baseurl: ""
@@ -61,7 +61,7 @@ collections:
 just_the_docs:
   collections:
     tools:
-      name: 工具
+      name: skill&amp;MCP&amp;工具
 
 # ========== 文章永久链接 ==========
 permalink: /posts/:year/:month/:title/

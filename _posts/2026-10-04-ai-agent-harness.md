@@ -1,7 +1,7 @@
 ---
 title: "AI Agent 是什么？从 Chatbot、Workflow 到 Harness"
 date: 2026-10-04 10:00:00 +0800
-category: 入门与概念
+category: 实践经验
 tags: [AI Agent, Harness, 基础概念]
 lede: "Agent 不只是会聊天的模型，而是一个能在目标约束下观察、行动、检查并继续推进的系统。理解它，关键是看清 LLM 外面的 Harness。"
 excerpt: "用图解厘清 AI Agent、Chatbot 与 Workflow 的差异，并拆解 Harness 如何把 LLM 变成可执行、可约束、可验证的 Agent。"

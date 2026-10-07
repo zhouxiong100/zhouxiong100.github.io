@@ -3,7 +3,7 @@ layout: default
 title: 文章
 nav_order: 2
 permalink: /articles/
-description: 按分类浏览全部 AI Agent 文章。
+description: 按分类浏览实践经验与 skill&MCP&工具文章。
 ---
 
 # 文章

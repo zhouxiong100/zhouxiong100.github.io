@@ -2,7 +2,7 @@
 title: 工具总览
 nav_order: 1
 permalink: /tools/
-description: 我长期在用的 AI Agent 工具清单。
+description: skill、MCP 与 AI Agent 工具清单。
 ---
 
 # 工具总览
