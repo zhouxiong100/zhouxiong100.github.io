@@ -58,11 +58,6 @@ collections:
     permalink: "/tools/:path/"
     output: true
 
-just_the_docs:
-  collections:
-    tools:
-      name: skill&amp;MCP&amp;工具
-
 # ========== 文章永久链接 ==========
 permalink: /posts/:year/:month/:title/
 
