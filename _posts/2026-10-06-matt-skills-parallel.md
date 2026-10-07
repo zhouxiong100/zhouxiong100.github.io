@@ -1,7 +1,7 @@
 ---
 title: "Matt 的新 Skill 实测：并行开发是怎么跑起来的"
 date: 2026-10-06 10:00:00 +0800
-category: 工作流
+category: 工作流拆解
 tags: [AI Agent, Skills, 并行开发]
 lede: "Matt Pocock 的 skills 仓库新增了一个并行开发入口 /implement-spec：把工单当成任务图，把「就绪」的工单分给多个子 Agent，各自在独立 worktree 里按 TDD 实现，最后汇到一个集成分支。"
 excerpt: "拆解 Matt Pocock 新 skill /implement-spec 的并行开发流程：任务图、就绪前沿、worktree 并发、集成分支，以及这套做法什么时候值得用。"

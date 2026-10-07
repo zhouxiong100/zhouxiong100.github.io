@@ -22,19 +22,19 @@ description: AI Agent 使用经验、工作流拆解与工具分享。
 {: .no_toc }
 
 {%- assign latest = site.posts | sort: "date" | reverse %}
-<ul class="post-list">
-{%- for post in latest limit: 4 %}
+<div class="post-grid">
+{%- for post in latest %}
   {%- assign cat = post.categories | first %}
-  <li class="post-list-item">
+  <a class="post-card" href="{{ post.url | relative_url }}">
     <p class="post-meta">
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
       {%- if cat %}<span class="sep">·</span><span class="tag">{{ cat }}</span>{% endif %}
     </p>
-    <a class="post-list-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    <p class="post-list-excerpt">{{ post.lede | default: post.excerpt | strip_html | truncate: 88 }}</p>
-  </li>
+    <span class="post-card-title">{{ post.title }}</span>
+    <span class="post-card-excerpt">{{ post.lede | default: post.excerpt | strip_html | truncate: 88 }}</span>
+  </a>
 {%- endfor %}
-</ul>
+</div>
 
 [查看全部文章 →]({{ '/articles/' | relative_url }})
 
