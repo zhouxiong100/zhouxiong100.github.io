@@ -127,4 +127,4 @@ npx skills@latest add mattpocock/skills
 
 - GitHub：[mattpocock/skills —— Skills for Real Engineers](https://github.com/mattpocock/skills)
 - 站内文章：[AI Agent 是什么？从 Chatbot、Workflow 到 Harness]({{ '/posts/2026/10/ai-agent-harness/' | relative_url }})
-- 站内文章：[我把 AI Agent 放进研发流程的四个位置]({{ '/posts/2026/09/agent-workflow/' | relative_url }})
+- 站内文章：[上下文管理：让 Agent 少返工的关键]({{ '/posts/2026/09/context-engineering/' | relative_url }})
