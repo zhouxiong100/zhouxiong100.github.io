@@ -1,6 +1,7 @@
 ---
 title: Magpie
 nav_order: 12
+nav_exclude: true
 card: true
 tagline: 用一个入口管理多个 Agent 的模型，让 Claude Code、Codex、Gemini CLI 共用同一套供应商
 category: 模型与路由
