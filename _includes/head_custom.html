@@ -1,39 +1,12 @@
 <!-- 展示字体只加载拉丁字符，中文回落到系统字体，避免几 MB 的 CJK 字体下载 -->
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/newsreader@5.3.0/latin-400.css" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/newsreader@5.3.0/latin-600.css" media="print" onload="this.media='all'">
-<noscript>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/newsreader@5.3.0/latin-400.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/newsreader@5.3.0/latin-600.css">
-</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/newsreader@5.3.0/latin-400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/newsreader@5.3.0/latin-600.css">
 
-<!-- 关键布局提前内联：避免导航整页重载时侧边栏/正文横向跳动 -->
+<!-- 固定滚动条占位，避免正文在页面间横向跳动 -->
 <style>
   html {
     scrollbar-gutter: stable;
-  }
-
-  @media (min-width: 50rem) {
-    .side-bar {
-      position: fixed;
-      width: 15.5rem;
-      height: 100%;
-    }
-
-    .side-bar + .main {
-      margin-left: 15.5rem;
-    }
-  }
-
-  @media (min-width: 66.5rem) {
-    .side-bar {
-      width: calc((100% - 66.5rem) / 2 + 16.5rem);
-      min-width: 16.5rem;
-    }
-
-    .side-bar + .main {
-      margin-left: max(16.5rem, (100% - 66.5rem) / 2 + 16.5rem);
-    }
   }
 </style>
 
