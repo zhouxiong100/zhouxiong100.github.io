@@ -28,6 +28,7 @@ description: skill、MCP 与 AI Agent 工具清单。
 
 - [anatomy](https://github.com/wheresryan22/anatomy)：生成机器与复杂系统的交互式等距图，适合补强说明性配图
 - [codex-ppt-skill](https://github.com/ningzimu/codex-ppt-skill)：用图片生成 PPT，适合快速做视觉化演示稿
+- [archify](https://github.com/tt-a1i/archify)：用 AI 生成网站与系统架构图，适合补强架构类文章配图
 
 ## 挑选标准
 
