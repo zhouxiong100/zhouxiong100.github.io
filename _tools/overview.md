@@ -24,6 +24,11 @@ description: skill、MCP 与 AI Agent 工具清单。
 
 - [Magpie]({{ '/tools/magpie/' | relative_url }})：一个入口切换 Claude Code、Codex、Gemini CLI 的模型
 
+## 待考察（2026-10-13）
+
+- [anatomy](https://github.com/wheresryan22/anatomy)：生成机器与复杂系统的交互式等距图，适合补强说明性配图
+- [codex-ppt-skill](https://github.com/ningzimu/codex-ppt-skill)：用图片生成 PPT，适合快速做视觉化演示稿
+
 ## 挑选标准
 
 {: .tip }
